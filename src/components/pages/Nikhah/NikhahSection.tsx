@@ -5,8 +5,9 @@ import floral1 from "@/assets/Union 1.svg";
 import back from "@/assets/back.jpg";
 import { Oswald } from "next/font/google";
 
-const oswald = Oswald({ subsets: ["latin"] });
-
+const oswald = Oswald({ subsets: ["latin"], weight: ["400"],
+  display: "swap",
+  fallback: ["Arial", "sans-serif"], });
 const NikhahSection = () => {
   return (
     <section className={scss.NikhahSection}>
