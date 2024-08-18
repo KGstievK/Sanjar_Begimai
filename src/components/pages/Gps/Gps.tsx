@@ -1,5 +1,7 @@
 "use client"
+import { Oswald } from 'next/font/google';
 import scss from './Gps.module.scss'
+const oswald = Oswald({ subsets: ["latin"] });
 
 const Gps = () => {
   return (
@@ -7,8 +9,8 @@ const Gps = () => {
       <div className="container">
         <div className={scss.content}>
           <h1>АДРЕС:</h1>
-          <p>Город Балыкчы, Улица Абдрахманова, 342/5</p>
-          <p>Ресторан: <br /> <strong>Мурас</strong></p>
+          <p>Город Талас, Улица Манас, 124</p>
+          <p className={oswald.className}>Ресторан: <br /> <strong className={oswald.className}>BERMET HALL</strong></p>
         </div>
       </div>
     </section>
