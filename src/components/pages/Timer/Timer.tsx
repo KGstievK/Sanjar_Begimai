@@ -2,7 +2,6 @@
 
 import { Oswald } from "next/font/google";
 import scss from "./Timer.module.scss";
-
 const oswald = Oswald({ subsets: ["latin"], weight: ["400"],
   display: "swap",
   fallback: ["Arial", "sans-serif"], });
@@ -14,7 +13,7 @@ const Timer: React.FC = () => {
         <div className={scss.content}>
           <div className={scss.titlee}>
             <div className={scss.line}></div>
-            <h1>Чакыруу!</h1>
+            <h1 className={scss.kindentosca}>Чакыруу!</h1>
             <div className={scss.line}></div>
           </div>
           <div className={scss.ourDay}>
@@ -22,13 +21,13 @@ const Timer: React.FC = () => {
             Урматтуу биздин коноктор! Сиздерди үйлөнүү үлпөт тоюбузга арналган салтанатка, кадырлуу коногубуз болуп кетүүгө чакырабыз
             </p>
             <p className={oswald.className}>Саат 17:00</p>
-            <h1>
+            <h1 className={scss.kindentosca}>
               Той ээлери: Жаныбек, Мира
             </h1>
           </div>
           <div className={scss.titlee}>
             <div className={scss.line}></div>
-            <h1>Приглашение!</h1>
+            <h1 className={scss.kindentosca}>Приглашение!</h1>
             <div className={scss.line}></div>
           </div>
           <div className={scss.ourDay}>
@@ -41,7 +40,7 @@ const Timer: React.FC = () => {
             <p className={oswald.className}>
               Будем рады пригласить вас стать почётными гостями торжества, посвящённого бракосочетания
             </p>
-            <h1>
+            <h1 className={scss.kindentosca}>
               С уважением хозяева торжества: <br /> Жаныбек, Мира
             </h1>
           </div>
