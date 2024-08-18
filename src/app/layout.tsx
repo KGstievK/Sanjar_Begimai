@@ -20,12 +20,12 @@ export const metadata: Metadata = {
     ],
     type: "website",
   },
-  twitter: {
-    card: "summary_large_image", // Используйте "summary" или "summary_large_image" в зависимости от формата
-    title: "Приглашение на Свадьбу",
-    description: "Кайрат и Нестан",
-    images: ["./favicon.svg"], // Замените на путь к вашему изображению
-  },
+  // twitter: {
+  //   card: "summary_large_image", // Используйте "summary" или "summary_large_image" в зависимости от формата
+  //   title: "Приглашение на Свадьбу",
+  //   description: "Кайрат и Нестан",
+  //   images: ["./favicon.svg"], // Замените на путь к вашему изображению
+  // },
 };
 
 export default function RootLayout({
