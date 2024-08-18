@@ -23,7 +23,7 @@ const Home = () => {
       <Gps/>
       {/* <Map/> */}
       {/* <Dad/> */}
-      <FormGuest/>
+      {/* <FormGuest/> */}
     </div>
 
   )
