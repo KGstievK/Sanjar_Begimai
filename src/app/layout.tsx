@@ -8,24 +8,24 @@ export const metadata: Metadata = {
   title: "Приглашение на Свадьбу",
   description: "Кайрат и Нестан",
   openGraph: {
-    // title: "Приглашение на Свадьбу",
-    // description: "Кайрат и Нестан",
+    title: "Приглашение на Свадьбу",
+    description: "Кайрат и Нестан",
     images: [
       {
-        url: "./favicon.svg", // Замените на путь к вашему изображению
-        width: 164, // Укажите ширину изображения (необязательно)
-        height: 115,  // Укажите высоту изображения (необязательно)
-        alt: "Описание изображения", // Замените на альтернативный текст для изображения
+        url: "./Union4.png", // Абсолютный URL к вашему изображению
+        width: 1200, // Оптимальные размеры
+        height: 630,
+        alt: "Приглашение на Свадьбу",
       },
     ],
     type: "website",
   },
-  // twitter: {
-  //   card: "summary_large_image", // Используйте "summary" или "summary_large_image" в зависимости от формата
-  //   title: "Приглашение на Свадьбу",
-  //   description: "Кайрат и Нестан",
-  //   images: ["./vercel.svg"], // Замените на путь к вашему изображению
-  // },
+  twitter: {
+    card: "summary_large_image",
+    title: "Приглашение на Свадьбу",
+    description: "Кайрат и Нестан",
+    images: ["./Union4.png"], // Абсолютный URL к вашему изображению
+  },
 };
 
 export default function RootLayout({
