@@ -3,7 +3,9 @@
 import { Oswald } from "next/font/google";
 import scss from "./Timer.module.scss";
 
-const oswald = Oswald({ subsets: ["latin"] });
+const oswald = Oswald({ subsets: ["latin"], weight: ["400"],
+  display: "swap",
+  fallback: ["Arial", "sans-serif"], });
 
 const Timer: React.FC = () => {
   return (

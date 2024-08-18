@@ -15,6 +15,46 @@ const TOKEN = process.env.NEXT_PUBLIC_TELEGRAM_TOKEN;
 const CHAT_ID = process.env.NEXT_PUBLIC_TELEGRAM_CHAT_ID;
 const url = process.env.NEXT_PUBLIC_API_URL;
 
+const devs = [
+  {
+    dev: "---ТАҢДАҢЫЗ---"
+  },
+  {
+    dev: "Кудалар"
+  },
+  {
+    dev: "Туугандар"
+  },
+  {
+    dev: "Тайкелер"
+  },
+  {
+    dev: "Өкүл Ата, Өкүл Апа"
+  },
+  {
+    dev: "Жезде, Эже, Кыздар, Күйө балдар"
+  },
+  {
+    dev: "Бөлөлөр"
+  },
+  {
+    dev: "Жекжат Дос Аяш."
+  },
+  {
+    dev: "Коллегалар"
+  },
+  {
+    dev: "Кошуналар"
+  },
+  {
+    dev: "Бала, келиндин достору."
+  },
+  {
+    dev: "Катташ асылдар"
+  },
+]
+
+
 const FormGuest = () => {
   const [show, setShow] = useState(false);
   const [user, setUser] = useState<FormType | null>(null);
@@ -90,35 +130,27 @@ const FormGuest = () => {
       <div className="container">
         <div className={scss.content}>
           <h1>АНКЕТА ГОСТЯ</h1>
-          <p>Просьба подтвердить присутствие до 2 октября</p>
+          <p>Просьба подтвердить присутствие до 8 Сентября</p>
           <form action="" onSubmit={handleSubmit(onSubmit)}>
             <input
               type="text"
-              placeholder="Ваша Имя и Фамилия"
+              placeholder="Сиздин аты-жөнүңүз"
               {...register("name", { required: true })}
             />
             <input
               type="text"
-              placeholder="Имя и Фамилия вашей спутницы"
+              placeholder="Жаарыңыздын аты-жөнү"
               {...register("partner", { required: false })}
-            />  
-            <p>Планируете ли вы присутствовать на свадьбе?</p>
-            <div className={scss.radio}>
-              <input
-                type="radio"
-                value="Приду✅"
-                {...register("dev", { required: true })}
-              />
-              <p>Да, с удовольствием</p>
-            </div>
-            <div className={scss.radio}>
-              <input
-                type="radio"
-                value="Не смогу❌"
-                {...register("dev", { required: true })}
-              />
-              <p>К сожалению, не смогу</p>
-            </div>
+            />
+            <select {...register("dev")}>
+            {
+              devs.map((item, idx) => (
+                <>
+                  <option value={item.dev}>{item.dev}</option>
+                </>
+              ))
+            }
+            </select>
             <button type="submit">Отправить</button>
           </form>
         </div>

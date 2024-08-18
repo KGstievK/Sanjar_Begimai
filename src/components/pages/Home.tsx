@@ -21,9 +21,9 @@ const Home = () => {
       <SoTimes/>
       <Timer/>
       <Gps/>
-      <Map/>
+      {/* <Map/> */}
       {/* <Dad/> */}
-      {/* <FormGuest/> */}
+      <FormGuest/>
     </div>
 
   )
