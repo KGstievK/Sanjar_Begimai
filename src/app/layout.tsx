@@ -8,8 +8,8 @@ export const metadata: Metadata = {
   title: "Приглашение на Свадьбу",
   description: "Кайрат и Нестан",
   openGraph: {
-    title: "Приглашение на Свадьбу",
-    description: "Кайрат и Нестан",
+    // title: "Приглашение на Свадьбу",
+    // description: "Кайрат и Нестан",
     images: [
       {
         url: "./vercel.svg", // Замените на путь к вашему изображению
