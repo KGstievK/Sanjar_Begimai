@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Приглашение на Свадьбу",
     description: "Санжар Бегимай",
-    // url: "https://bekzat-and-gulnara.vercel.app/",
+    url: "https://sanjar-begimai.vercel.app/",
     type: "website",
     images: [
       {

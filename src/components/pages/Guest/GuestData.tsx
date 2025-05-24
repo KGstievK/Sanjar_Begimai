@@ -23,7 +23,7 @@ const GuestData: FC = () => {
 
   const onSubmitEdit: SubmitHandler<guestType> = async (data) => {
     try {
-      const { data: responseTodos } = await axios.patch(`${url}/Nestan-Kairat/${editId}`, data);
+      const { data: responseTodos } = await axios.patch(`${url}/Sanjar_Brgimai_Wedding${editId}`, data);
       setGuests(responseTodos);
       setEditId(null);
     } catch (e) {
@@ -35,18 +35,18 @@ const GuestData: FC = () => {
     const updateData = {
       isCompleted: !isCompleted,
     };
-    const { data } = await axios.patch(`${url}/Nestan-Kairat/${_id}`, updateData);
+    const { data } = await axios.patch(`${url}/Sanjar_Brgimai_Wedding${_id}`, updateData);
     setGuests(data);
   };
 
   const deleteTodo = async (_id: number) => {
-    const { data } = await axios.delete(`${url}/Nestan-Kairat/${_id}`);
+    const { data } = await axios.delete(`${url}/Sanjar_Brgimai_Wedding${_id}`);
     setGuests(data);
   };
 
   const fetchGuests = async () => {
     try {
-      const { data } = await axios.get(`${url}/Nestan-Kairat`);
+      const { data } = await axios.get(`${url}/Sanjar_Brgimai_Wedding`);
       setGuests(data);
     } catch (error) {
       console.error("Error fetching guest data:", error);

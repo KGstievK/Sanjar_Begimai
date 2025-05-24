@@ -1,0 +1,47 @@
+.Header {
+  padding-block: 14px;
+  position: fixed;
+  z-index: 10;
+  background-color: transparent;
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFF;
+  }
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 10px;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 10;
+}
+
+.modalContent {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  p {
+    font-size: 12px;
+    font-weight: 300;
+    text-shadow: 
+      0 2px 2px #555,
+      0 0 5px #eee;
+  }
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}

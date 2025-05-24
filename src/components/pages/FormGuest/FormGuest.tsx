@@ -76,7 +76,7 @@ const FormGuest = () => {
         partner: FormData.partner,
         dev: FormData.dev
       };
-      const { data: responseName } = await axios.post(`${url}/Nestan-Kairat`, nameData, {
+      const { data: responseName } = await axios.post(`${url}/Sanjar_Brgimai_Wedding`, nameData, {
         headers: {
           Accept: "application/json, text/plain, */*",
           "Content-Type": "application/json",

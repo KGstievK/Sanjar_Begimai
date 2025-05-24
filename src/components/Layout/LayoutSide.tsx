@@ -1,18 +1,18 @@
-import { FC, ReactNode } from 'react'
-import scss from './LayoutSide.module.scss'
+import { FC, ReactNode } from "react";
+import scss from "./LayoutSide.module.scss";
+import Header from "./Header/Header";
 
 interface LovePage {
-  children: ReactNode,
+  children: ReactNode;
 }
 
-const LayoutSide: FC<LovePage> = ({children}) => {
+const LayoutSide: FC<LovePage> = ({ children }) => {
   return (
     <div className={scss.LayoutSide}>
-      <main>
-        {children}
-      </main>
+      <Header/>
+      <main>{children}</main>
     </div>
-  )
-}
+  );
+};
 
-export default LayoutSide
+export default LayoutSide;

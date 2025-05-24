@@ -26,7 +26,7 @@ const NikhahSection = () => {
                 <div className={scss.line}></div>
                 <Image className={scss.floral2} src={floral2} alt="" />
               </div>
-              <h2 className={scss.fonts}>Cанжар & Бегимай</h2>
+              <h2 className={scss.fonts}><span>Cанжар</span> <span>&</span> <span>Бегимай</span></h2>
               <div className={scss.date}>
                 <h2 className={oswald.className}>Июнь</h2>
                 <div className={scss.day}>
