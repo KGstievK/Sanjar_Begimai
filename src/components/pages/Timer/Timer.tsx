@@ -22,7 +22,7 @@ const Timer: React.FC = () => {
             </p>
             <p className={oswald.className}>Саат 17:00</p>
             <h1 className={scss.kindentosca}>
-              Той ээлери: Жаныбек, Мира
+              Той ээлери: Болот, Айсулу
             </h1>
           </div>
           <div className={scss.titlee}>
@@ -41,7 +41,7 @@ const Timer: React.FC = () => {
               Будем рады пригласить вас стать почётными гостями торжества, посвящённого бракосочетания
             </p>
             <h1 className={scss.kindentosca}>
-              С уважением хозяева торжества: <br /> Жаныбек, Мира
+              С уважением хозяева торжества: <br /> Болот, Айсулу
             </h1>
           </div>
         </div>

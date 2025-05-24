@@ -1,7 +1,5 @@
 "use client";
-import Image from "next/image";
 import scss from "./Welcome.module.scss";
-import folor from "@/assets/Vector.svg";
 import { FC, useEffect, useState } from "react";
 
 

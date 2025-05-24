@@ -6,25 +6,20 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Приглашение на Свадьбу",
-  description: "Кайрат и Нестан",
+  description: "Санжар Бегимай",
   openGraph: {
     title: "Приглашение на Свадьбу",
-    description: "Кайрат и Нестан",
+    description: "Санжар Бегимай",
+    // url: "https://bekzat-and-gulnara.vercel.app/",
+    type: "website",
     images: [
       {
-        url: "./Union4.png", // Абсолютный URL к вашему изображению
-        width: 1200, // Оптимальные размеры
-        height: 630,
+        url: "/public/Logo.svg",
+        width: 60,
+        height: 60,
         alt: "Приглашение на Свадьбу",
       },
     ],
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Приглашение на Свадьбу",
-    description: "Кайрат и Нестан",
-    images: ["./Union4.png"], // Абсолютный URL к вашему изображению
   },
 };
 

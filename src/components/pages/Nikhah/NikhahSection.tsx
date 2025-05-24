@@ -1,13 +1,17 @@
-"use client"
+"use client";
 import Image from "next/image";
 import scss from "./NikhahSection.module.scss";
-import floral1 from "@/assets/Union 1.svg";
+import floral1 from "@/assets/Canjar.svg";
+import floral2 from "@/assets/Begimai.svg";
 import back from "@/assets/back.jpg";
 import { Oswald } from "next/font/google";
 
-const oswald = Oswald({ subsets: ["latin"], weight: ["400"],
+const oswald = Oswald({
+  subsets: ["latin"],
+  weight: ["400"],
   display: "swap",
-  fallback: ["Arial", "sans-serif"], });
+  fallback: ["Arial", "sans-serif"],
+});
 const NikhahSection = () => {
   return (
     <section className={scss.NikhahSection}>
@@ -17,14 +21,19 @@ const NikhahSection = () => {
         <div className={scss.content}>
           <div className={scss.name}>
             <div className={scss.we}>
-              <Image className={scss.floral1} src={floral1} alt="" />
+              <div className={scss.cb}>
+                <Image className={scss.floral1} src={floral1} alt="" />
+                <div className={scss.line}></div>
+                <Image className={scss.floral2} src={floral2} alt="" />
+              </div>
+              <h2 className={scss.fonts}>Cанжар & Бегимай</h2>
               <div className={scss.date}>
-                <h2 className={oswald.className}>Сентябрь</h2>
+                <h2 className={oswald.className}>Июнь</h2>
                 <div className={scss.day}>
-                  <h3 className={oswald.className}>11</h3>
-                  <p className={oswald.className}>2024</p>
+                  <h3 className={oswald.className}>21</h3>
+                  <p className={oswald.className}>2025</p>
                 </div>
-                <h2 className={oswald.className}>Среда</h2>
+                <h2 className={oswald.className}>Суббота</h2>
               </div>
               <div className={scss.time}>
                 <h4 className={oswald.className}>17:00</h4>
@@ -34,12 +43,12 @@ const NikhahSection = () => {
           <div className={scss.name}>
             <div className={scss.we}>
               <div className={scss.dateCopy}>
-                <h2 className={oswald.className}>Сентябрь</h2>
+                <h2 className={oswald.className}>Июнь</h2>
                 <div className={scss.day}>
-                  <h3 className={oswald.className}>11</h3>
-                  <p className={oswald.className}>2024</p>
+                  <h3 className={oswald.className}>21</h3>
+                  <p className={oswald.className}>2025</p>
                 </div>
-                <h2 className={oswald.className}>Среда</h2>
+                <h2 className={oswald.className}>Суббота</h2>
               </div>
               <div className={scss.timeCopy}>
                 <h4 className={oswald.className}>17:00</h4>

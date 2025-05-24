@@ -11,8 +11,8 @@ const Gps = () => {
       <div className="container">
         <div className={scss.content}>
           <h1>АДРЕС:</h1>
-          <p>Город Талас, Улица Манас, 124</p>
-          <p className={oswald.className}>Ресторан: <br /> <strong className={oswald.className}>BERMET HALL</strong></p>
+          <p>Город Талас, Улица Ч. Айтматова, 246</p>
+          <p className={oswald.className}>Ресторан: <br /> <strong className={oswald.className}>ТАЛАС</strong></p>
         </div>
       </div>
     </section>
