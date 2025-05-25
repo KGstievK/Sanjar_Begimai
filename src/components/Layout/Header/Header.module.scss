@@ -1,25 +1,31 @@
 .Header {
   padding-block: 14px;
   position: fixed;
-  z-index: 10;
+  z-index: 2;
   background-color: transparent;
+
   .content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: #FFF;
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
   }
 }
 
 .modalOverlay {
   position: fixed;
-  top: 10px;
+  top: 0;
   left: 0;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  z-index: 10;
 }
 
 .modalContent {

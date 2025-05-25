@@ -12,6 +12,7 @@ const oswald = Oswald({
   display: "swap",
   fallback: ["Arial", "sans-serif"],
 });
+
 const NikhahSection = () => {
   return (
     <section className={scss.NikhahSection}>

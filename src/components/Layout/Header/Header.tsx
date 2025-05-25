@@ -1,51 +1,54 @@
-"use client"
-import { useEffect, useRef } from "react";
+"use client";
+import { useEffect, useRef, useState } from "react";
 import scss from "./Header.module.scss";
 
 const Header = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
+  const [showHint, setShowHint] = useState(true);
+  const [hasInteracted, setHasInteracted] = useState(false);
 
   useEffect(() => {
     const handleUserInteraction = () => {
-      if (audioRef.current) {
-        audioRef.current.volume = 0.2; // Установка громкости
+      if (!hasInteracted && audioRef.current) {
+        audioRef.current.volume = 0.2;
         audioRef.current.play().catch((error) => {
-          console.log("Не удалось воспроизвести аудио:", error);
+          console.error("Не удалось воспроизвести аудио:", error);
         });
+        setHasInteracted(true);
+        setShowHint(false);
+        // Удаляем только после первого взаимодействия
+        document.removeEventListener("click", handleUserInteraction);
+        document.removeEventListener("touchstart", handleUserInteraction);
       }
-      // Удаляем обработчик после первого клика
-      document.removeEventListener("click", handleUserInteraction);
     };
 
-    // Добавляем обработчик события клика на документ
+    // Добавляем обработчики для разных типов взаимодействий
     document.addEventListener("click", handleUserInteraction);
+    document.addEventListener("touchstart", handleUserInteraction);
 
-    // Убираем обработчик при размонтировании компонента
     return () => {
       document.removeEventListener("click", handleUserInteraction);
+      document.removeEventListener("touchstart", handleUserInteraction);
     };
-  }, []);
+  }, [hasInteracted]);
 
   return (
     <header className={scss.Header}>
       <div className="container">
         <div className={scss.content}>
-          <div className={scss.modalOverlay}>
-            <div className={scss.modalContent}>
-              <audio ref={audioRef}>
-                <source
-                  src="/audio/videoplayback.mp3"
-                  type="audio/mpeg"
-                />
-                <source
-                  src="/audio/videoplayback.ogg"
-                  type="audio/ogg"
-                />
-                Ваш браузер не поддерживает аудио.
-              </audio>
-              <p>Нажмите где угодно, чтобы запустить музыку.</p>
+          {showHint && (
+            <div className={scss.modalOverlay}>
+              <div className={scss.modalContent}>
+                <p>Нажмите где угодно, чтобы запустить музыку 🎵</p>
+              </div>
             </div>
-          </div>
+          )}
+
+          {/* Убрали autoPlay - он бесполезен без пользовательского взаимодействия */}
+          <audio ref={audioRef} loop>
+            <source src="/audio/videoplayback.mp3" type="audio/mpeg" />
+            Ваш браузер не поддерживает аудио.
+          </audio>
         </div>
       </div>
     </header>
