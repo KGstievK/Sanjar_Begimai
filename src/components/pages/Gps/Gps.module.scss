@@ -22,6 +22,16 @@
       strong {
         font-size: 36px;
       }
+      a {
+        :hover {
+          border: none;
+          border-bottom: 3px solid #000;
+          color: #FFF;
+          text-shadow: 
+          0 2px 2px #555,
+          0 0 5px #eee;
+        }
+      }
     }
   }
 }

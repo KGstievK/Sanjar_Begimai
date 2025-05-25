@@ -43,7 +43,7 @@ const Timer: React.FC = () => {
             <p className={oswald.className}>
               Будем рады пригласить вас стать почётными гостями торжества,
               посвящённого бракосочетания
-              <br /> <strong>Санжара - Бегимая</strong> <br />  
+              <br /><strong>Санжара и Бегимай</strong>
             </p>
             <h1 className={scss.kindentosca}>
               С уважением хозяева торжества: <br /> Болот, Айсулуу

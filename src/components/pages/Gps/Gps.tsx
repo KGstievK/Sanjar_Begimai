@@ -12,7 +12,7 @@ const Gps = () => {
         <div className={scss.content}>
           <h1>АДРЕС:</h1>
           <p>Город Талас, Улица Ч. Айтматова, 246</p>
-          <p className={oswald.className}>Ресторан: <br /> <strong className={oswald.className}>ТАЛАС</strong></p>
+          <p className={oswald.className}>Ресторан: <br /> <a href="https://go.2gis.com/eL0vu"><strong className={oswald.className}>ТАЛАС</strong></a></p>
         </div>
       </div>
     </section>
