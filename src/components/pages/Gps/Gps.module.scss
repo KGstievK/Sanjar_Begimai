@@ -22,16 +22,18 @@
       strong {
         font-size: 36px;
       }
-      a {
-        :hover {
-          border: none;
-          border-bottom: 3px solid #000;
-          color: #FFF;
-          text-shadow: 
-          0 2px 2px #555,
-          0 0 5px #eee;
-        }
-      }
+    }
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      border: 3px solid #000;
+      width: 250px;
+      height: 50px;
+      cursor: pointer;
+      border-radius: 10px;
+      font-size: clamp(16px, 3vw, 24px);
     }
   }
 }

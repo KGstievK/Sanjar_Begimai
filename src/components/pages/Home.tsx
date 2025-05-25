@@ -1,6 +1,7 @@
 "use client"
 import Gps from "./Gps/Gps"
 import NikhahSection from "./Nikhah/NikhahSection"
+import Photo from "./Photo/Photo"
 import SoTimes from "./SoTime/SoTimes"
 import Timer from "./Timer/Timer"
 
@@ -18,6 +19,7 @@ const Home = () => {
       <NikhahSection/>
       <SoTimes/>
       <Timer/>
+      <Photo/>
       <Gps/>
 
     </div>
